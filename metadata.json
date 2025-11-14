@@ -1,0 +1,5 @@
+{
+  "name": "QuakeVision Japan",
+  "description": "日本の最新の地震情報を提供する、洗練されたデザインのWebアプリケーションです。地震を選択し、インタラクティブな地図上で震度観測点を視覚化します。ライトモードとダークモードの両方に対応しています。",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,21 @@
+{
+  "name": "QuakeVision Japan",
+  "short_name": "QuakeVision",
+  "description": "日本の最新の地震情報を提供する、洗練されたデザインのWebアプリケーションです。地震を選択し、インタラクティブな地図上で震度観測点を視覚化します。ライトモードとダークモードの両方に対応しています。",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7fafc",
+  "theme_color": "#0e7490",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
