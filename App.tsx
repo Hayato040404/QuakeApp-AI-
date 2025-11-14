@@ -188,7 +188,7 @@ const App: React.FC = () => {
       
       <header className="w-full max-w-screen-2xl mx-auto mb-4 flex justify-between items-center shrink-0">
         <div className="text-left">
-            <h1 className="text-2xl lg:text-4xl font-bold tracking-tighter text-gray-900 dark:text-gray-100">
+            <h1 className="text-xl sm:text-2xl lg:text-4xl font-bold tracking-tighter text-gray-900 dark:text-gray-100">
             地震情報<span className="text-cyan-600 dark:text-cyan-400">ビューア</span>
             </h1>
             <p className="text-gray-500 dark:text-gray-400 text-xs lg:text-sm">
@@ -255,7 +255,7 @@ const App: React.FC = () => {
                         <h2 className="text-lg font-bold text-gray-800 dark:text-gray-200">最近の地震</h2>
                         <IntensityFilter onChange={setMinIntensity} />
                     </div>
-                    <div className="space-y-2 overflow-y-auto max-h-[150px] custom-scrollbar">
+                    <div className="space-y-2 overflow-y-auto custom-scrollbar" style={{ maxHeight: '25vh' }}>
                          {filteredEarthquakes.map(quake => (
                             <EarthquakeListItem 
                                 key={quake.id}
@@ -275,7 +275,7 @@ const App: React.FC = () => {
                         quakeId={enrichedSelectedEarthquake?.id}
                         observationPoints={enrichedSelectedEarthquake?.points || []} 
                         epicenter={enrichedSelectedEarthquake?.earthquake.hypocenter || null}
-                        bottomOffset={120}
+                        bottomOffset={100}
                     />
                     <DraggableSheet headerContent={sheetHeader}>
                         <InfoPanel data={enrichedSelectedEarthquake} />

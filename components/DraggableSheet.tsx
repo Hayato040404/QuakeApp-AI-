@@ -9,7 +9,7 @@ const DraggableSheet: React.FC<DraggableSheetProps> = ({ headerContent, children
   const sheetRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   
-  const [minHeight] = useState(120);
+  const [minHeight] = useState(100);
   const [maxHeight, setMaxHeight] = useState(window.innerHeight * 0.8);
 
   useEffect(() => {

@@ -1,21 +1,15 @@
 {
   "name": "quakevision-japan",
+  "version": "1.0.0",
+  "description": "日本の最新の地震情報を提供する、洗練されたデザインのWebアプリケーションです。地震を選択し、インタラクティブな地図上で震度観測点を視覚化します。ライトモードとダークモードの両方に対応しています。",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "d3": "^7.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "topojson": "^3.0.2"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "tailwindcss": "^3.4.3"
   }
 }
