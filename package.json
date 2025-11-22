@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "日本の最新の地震情報を提供する、洗練されたデザインのWebアプリケーションです。地震を選択し、インタラクティブな地図上で震度観測点を視覚化します。ライトモードとダークモードの両方に対応しています。",
   "private": true,
+  "homepage": ".",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "d3": "^7.9.0",
     "react": "^18.3.1",
@@ -10,6 +17,14 @@
     "topojson": "^3.0.2"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.3"
+    "@types/d3": "^7.4.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/topojson": "^3.2.6",
+    "@vitejs/plugin-react": "^4.3.1",
+    "gh-pages": "^6.1.1",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.1"
   }
 }

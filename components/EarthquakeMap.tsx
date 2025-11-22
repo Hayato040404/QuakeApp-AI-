@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 import { EnrichedP2pPoint, P2pHypocenter } from '../types';
 import { JAPAN_TOPOJSON_URL, INTENSITY_COLORS, INTENSITY_MAP } from '../constants';
-
-// d3 and topojson are loaded from scripts in index.html
-const d3 = (window as any).d3;
-const topojson = (window as any).topojson;
+import * as d3 from 'd3';
+import * as topojson from 'topojson';
 
 // --- Memoized Sub-components for Rendering ---
 
@@ -111,7 +109,7 @@ const EarthquakeMap: React.FC<EarthquakeMapProps> = ({ quakeId, observationPoint
 
   // Effect to fetch map geometry
   useEffect(() => {
-    if (!d3 || !topojson) return;
+    // d3 and topojson are now imported
     d3.json(JAPAN_TOPOJSON_URL).then((japan: any) => {
       setJapanGeo(topojson.feature(japan, japan.objects.japan));
     });

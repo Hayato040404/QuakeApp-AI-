@@ -21,10 +21,6 @@
         document.documentElement.classList.remove('dark');
       }
     </script>
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://unpkg.com/topojson@3"></script>
     <style>
       @import url('https://rsms.me/inter/inter.css');
       html { font-family: 'Inter', sans-serif; }
@@ -41,15 +37,20 @@
   <script type="importmap">
 {
   "imports": {
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "d3": "https://aistudiocdn.com/d3@^7.9.0",
+    "topojson": "https://aistudiocdn.com/topojson@^3.0.2"
   }
 }
 </script>
 </head>
   <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white antialiased">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
